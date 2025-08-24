@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(images/bg_image_blured.png);
+  background-size: max(100vw, 200vh);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Special Elite", cursive;
+  font-weight: normal;
+}
+
+p {
+  color: rgb(58, 56, 56);
+}
+
+a {
+  color: rgb(204, 81, 107);
+  font-weight: bold;
+}
+
+a:active {
+  color: rgb(153, 70, 88);
+  text-decoration: none;
+}
+
+a:hover{
+    text-shadow: 0 0 5px rgba(255, 108, 145, 0.274);
+}
+
+/* ----------------------------- Header -------------------------*/
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  font-weight: 900;
+  line-height: 80%;
+  font-size: 6rem;
+  margin: 0;
+}
+
+header {
+  background-image: url(images/bg_image_blured_dark.png);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px 9px;
+  background-attachment: fixed;
+  background-size: 100vw;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 5%;
+  padding: 3%;
+  text-align: center;
+}
+
+header p {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: rgb(240, 230, 230);
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header .credit::before,
+header .credit::after {
+  content: " ";
+  display: inline-block;
+  height: 0.8em;
+  width: 60%;
+  border-bottom: 3px solid white;
+  vertical-align: top;
+}
+
+header .credit::after{
+    width: 30%;
+}
+
+header img {
+  margin-left: 80vw;
+}
+
+header hr {
+  border-style: solid;
+  color: rgb(240, 230, 230);
+}
+
+/* ----------------------- Navigation ------------------------- */
+nav {
+  margin-right: auto;
+  margin-left: auto;
+  width: 30vw;
+  padding: 3%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+nav li {
+  color: rgb(204, 81, 107);
+  padding-left: 5%;
+  width: 90%;
+  margin-bottom: 10px 0 10px 0;
+}
+
+nav h4 {
+  color: rgb(58, 56, 56);
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+/* ------------------------------ Main Section ----------------------------- */
+
+section {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px 9px;
+  background-color: rgb(240, 230, 230);
+  border-radius: 30px;
+  padding-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80vw;
+}
+
+section h2 {
+  background-image: url(images/bg_image_blured_dark.png);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  border-radius: 29px 29px 0 0;
+  color: rgb(240, 230, 230);
+  margin: 30px auto 30px auto;
+  background-size: 100vw;
+  padding: 1% 10% 1% 10%;
+  font-size: 2em;
+  width: 80.1%;
+}
+
+section p {
+  padding-left: 8%;
+  padding-right: 4%;
+}
+
+#introduction {
+  background-image: none;
+  background-color: rgb(58, 56, 56);
+}
+
+/* -----------------------Popular Vocaloids Cards-------------------------- */
+
+#card-container {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  padding: 20px;
+  margin: 2%;
+  transition: box-shadow 0.5s, width 0.5s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.226) 0 0 5px 5px;
+  width: 210px;
+}
+
+.card h3 {
+  font-weight: bold;
+  color: rgb(58, 56, 56);
+  font-size: 1.5em;
+  margin: 3px;
+}
+
+.card span {
+  font-size: 0.7em;
+  color: rgb(105, 105, 105);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card details {
+  text-align: left;
+}
+
+.card details p {
+  font-size: 10px;
+  margin: 1px;
+}
+
+/* ---------------------------- Top Producers --------------------------*/
+
+.block-list {
+  height: max-content;
+  text-align: center;
+  padding: 3%;
+  width: 90%;
+}
+
+.block-list > * {
+  list-style-position: inside;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  height: 100px;
+  width: 300px;
+  padding: 2%;
+  margin: 2%;
+}
+
+.block-list > * > * {
+  list-style-position: outside;
+  font-weight: bold;
+}
+
+/* ---------------------------- Footer --------------------------------*/
+
+footer {
+  background-color: rgb(204, 81, 107);
+  margin-top: 50px;
+  height: 120px;
+  text-align: center;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  padding: 0;
+  width: 60%;
+  margin-left: 0;
+  margin-right: 3px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 2%;
+}
+
+footer h6 {
+  background-color: rgb(230, 109, 135);
+  color: white;
+  padding: 1%;
+  width: 98%;
+  margin: 0;
+}
